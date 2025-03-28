@@ -4,7 +4,8 @@ import p5 from 'p5'
 
 const sketch = (p: p5) => {
   p.setup = () => {
-    p.createCanvas(400, 400);
+    const canvas = p.createCanvas(400, 400);
+    canvas.parent('app');
   };
 
   p.draw = () => {
